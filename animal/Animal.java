@@ -9,11 +9,11 @@ public abstract class Animal {
 	private int age;
 	
 	public Animal() {
-		this.nbrAnimal++;
+		Animal.nbrAnimal++;
 	}
 	
 	public Animal(int id, String name, double speed, int poid, int age) {
-		this.nbrAnimal++;
+		Animal.nbrAnimal++;
 //		this.id = id;
 //		this.name = name;
 //		this.speed = speed;
