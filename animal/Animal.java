@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public abstract class Animal {
 	public static int nbrAnimal;
 	private int id;
 	private String name;
@@ -25,7 +25,11 @@ public class Animal {
 		this.setPoid(poid);
 		this.setAge(age);
 	}
-	
+	public Animal(int age,String nom) {
+		this.age = age;
+		this.name = nom;
+		
+	}
 	public int getId() {
 		return id;
 	}
@@ -67,11 +71,10 @@ public class Animal {
 	}
 
 	public String toString() {
-		
 		return "Animal :" +this.name + " Id : " +this.id + "Speed : " +this.speed + "Poids : " +this.poid + " Age : "+this.age ;
-		
-		
-		
 	}
+
+
+	public abstract String parle();
 	
 }
